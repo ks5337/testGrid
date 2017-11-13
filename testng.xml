@@ -12,17 +12,17 @@
 			</class>
 		</classes>
 	</test> -->
-	<!--<test name="FirefoxTest">
+	<test name="FirefoxTest">
       <parameter name="browser" value="firefox" />
       <classes>
              <class name="org.testJenkins.TestGrid" />
       </classes>
-   </test>-->
+   </test>
 
-   <test name="ChromeTest">
+   <!--<test name="ChromeTest">
       <parameter name="browser" value="chrome" />
       <classes>
              <class name="org.testJenkins.TestGrid" />
       </classes>
-   </test>
+   </test>-->
 </suite>
