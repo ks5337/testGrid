@@ -23,7 +23,7 @@ public class TestGrid {
 	@BeforeTest
 	public void launchapp(String browser) throws MalformedURLException {
 		//String URL = "http://springmvc-wfproject5.openshift.axies.org/springmvc/";
-		String URL = "https://www.baidu.com.cn";
+		String URL = "https://www.baidu.com";
 		//String URL = "http://la-springmvc.lingandev.svc:8080/springmvc/index.jsp";
 		//String URL = "http://10.131.0.124:8080/springmvc/index.jsp";
 		try {
@@ -120,9 +120,9 @@ public class TestGrid {
 						    
 		    System.out.println(" click() begin");
 			driver.findElement(By.linkText("hao123")).click();
-			driver.findElements(By.linkText("Delete")).get(0).click();
+			//driver.findElements(By.linkText("Delete")).get(0).click();
 			System.out.println(" click() end");
-     		driver.manage().window().maximize();
+     		//driver.manage().window().maximize();
 		    } catch(Exception ex) {
 		        System.out.println("ex2");
 		        System.out.println(ex);
