@@ -23,14 +23,14 @@ public class TestGrid {
 	@BeforeTest
 	public void launchapp(String browser) throws MalformedURLException {
 		//String URL = "http://springmvc-wfproject5.openshift.axies.org/springmvc/";
-		//String URL = "https://www.baidu.com.cn";
+		String URL = "https://www.baidu.com.cn";
 		//String URL = "http://la-springmvc.lingandev.svc:8080/springmvc/index.jsp";
-		String URL = "http://10.131.0.124:8080/springmvc/index.jsp";
+		//String URL = "http://10.131.0.124:8080/springmvc/index.jsp";
 		try {
 		if (browser.equalsIgnoreCase("firefox")) {
 			System.out.println(" Executing on FireFox");
 			//String Node = "http://selenium-hub.lingandev.svc:4444/wd/hub";
-			String Node = "http://10.131.0.152:4444/wd/hub";
+			String Node = "http://172.17.0.5:4444/wd/hub";
 			DesiredCapabilities cap = DesiredCapabilities.firefox();
 			System.out.println(" cap = DesiredCapabilities.firefox()");
 			cap.setBrowserName("firefox");
@@ -52,7 +52,7 @@ public class TestGrid {
 			cap.setBrowserName("chrome");
 			//cap.setCapability("chrome.switches", Arrays.asList("--start-maximized")); 
 			//String Node = "http://selenium-hub.lingandev.svc:4444/wd/hub";
-			String Node = "http://10.131.0.152:4444/wd/hub";
+			String Node = "http://172.17.0.5:4444/wd/hub";
 			System.out.println(" hub =" + Node);
             System.out.println(" URL =" + URL);
 			driver = new RemoteWebDriver(new URL(Node), cap);
@@ -89,11 +89,11 @@ public class TestGrid {
 	public void calculatepercent() {
 	    try {
 		// 测试新增页面返回button
-				driver.findElement(By.linkText("Add User Info")).click();
-				driver.findElement(By.linkText("Go Back")).click();
+				//driver.findElement(By.linkText("Add User Info")).click();
+				//driver.findElement(By.linkText("Go Back")).click();
 
 				// 测试新增数据
-				driver.findElement(By.linkText("Add User Info")).click();
+				/*driver.findElement(By.linkText("Add User Info")).click();
 				driver.findElement(By.id("username")).sendKeys("markAdd");
 				driver.findElement(By.id("password")).sendKeys("markAdd1");
 				driver.findElement(By.id("nickname")).sendKeys("markAdd2");
@@ -101,7 +101,7 @@ public class TestGrid {
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);// 放置一个隐式等待，等待10秒后再抛出
 				WebElement input = driver.findElement(By.xpath("//input[@value='Submit']"));
 				input.submit();
-
+		    
 				// 测试修改数据
 				driver.findElements(By.linkText("Change")).get(0).click();
 				driver.findElement(By.id("password")).clear();
@@ -115,14 +115,14 @@ public class TestGrid {
 
 				// 测试删除数据
 				driver.findElements(By.linkText("Delete")).get(0).click();
-				
+			        */
 				
 						    
-		    //System.out.println(" click() begin");
-			//driver.findElement(By.linkText("hao123")).click();
-		//	driver.findElements(By.linkText("Delete")).get(0).click();
-			//System.out.println(" click() end");
-     		//driver.manage().window().maximize();
+		    System.out.println(" click() begin");
+			driver.findElement(By.linkText("hao123")).click();
+			driver.findElements(By.linkText("Delete")).get(0).click();
+			System.out.println(" click() end");
+     		driver.manage().window().maximize();
 		    } catch(Exception ex) {
 		        System.out.println("ex2");
 		        System.out.println(ex);
