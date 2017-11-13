@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >  
+<suite name="Testsuite" parallel="tests">
+	<!-- <test name="testNG" preserve-order="true">
+		<classes>
+			<class name="org.testJenkins.TestSpring" >
+				<methods>
+					<include name="testBefore"/>
+					<include name="testContent"/>
+					<include name="testAfter"/>
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+	<!--<test name="FirefoxTest">
+      <parameter name="browser" value="firefox" />
+      <classes>
+             <class name="org.testJenkins.TestGrid" />
+      </classes>
+   </test>-->
+
+   <test name="ChromeTest">
+      <parameter name="browser" value="chrome" />
+      <classes>
+             <class name="org.testJenkins.TestGrid" />
+      </classes>
+   </test>
+</suite>
