@@ -25,7 +25,7 @@ public class TestGrid {
 		//String URL = "http://springmvc-wfproject5.openshift.axies.org/springmvc/";
 		String URL = "https://www.baidu.com";
 		//String URL = "http://la-springmvc.lingandev.svc:8080/springmvc/index.jsp";
-		String URL = "http://10.131.0.124:8080/springmvc/index.jsp";
+		//String URL = "http://10.131.0.124:8080/springmvc/index.jsp";
 		try {
 		if (browser.equalsIgnoreCase("firefox")) {
 			System.out.println(" Executing on FireFox");
