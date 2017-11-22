@@ -30,7 +30,7 @@ public class TestGrid {
 		if (browser.equalsIgnoreCase("firefox")) {
 			System.out.println(" Executing on FireFox");
 			//String Node = "http://selenium-hub.lingandev.svc:4444/wd/hub";
-			String Node = "http://172.17.0.5:4444/wd/hub";
+			String Node = "http://172.17.0.10:4444/wd/hub";
 			DesiredCapabilities cap = DesiredCapabilities.firefox();
 			System.out.println(" cap = DesiredCapabilities.firefox()");
 			cap.setBrowserName("firefox");
@@ -52,7 +52,7 @@ public class TestGrid {
 			cap.setBrowserName("chrome");
 			//cap.setCapability("chrome.switches", Arrays.asList("--start-maximized")); 
 			//String Node = "http://selenium-hub.lingandev.svc:4444/wd/hub";
-			String Node = "http://172.17.0.5:4444/wd/hub";
+			String Node = "http://172.17.0.10:4444/wd/hub";
 			System.out.println(" hub =" + Node);
             System.out.println(" URL =" + URL);
 			driver = new RemoteWebDriver(new URL(Node), cap);
@@ -120,8 +120,8 @@ public class TestGrid {
 				
 						    
 		    System.out.println(" click() begin");
+			System.out.println("  WebDriver.getTitle() =" + driver.getTitle());
 			driver.findElement(By.linkText("hao123")).click();
-		//	driver.findElements(By.linkText("Delete")).get(0).click();
 			System.out.println(" click() end");
      		//driver.manage().window().maximize();
 		    } catch(Exception ex) {
