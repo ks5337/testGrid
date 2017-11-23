@@ -43,7 +43,7 @@ public class TestGrid {
 			// Launch website
 			driver.navigate().to(URL);
 			System.out.println(" driver.navigate().to(URL) end");
-			//driver.manage().window().maximize();
+			driver.manage().window().maximize();
 		} else if (browser.equalsIgnoreCase("chrome")) {
 
 		    System.out.println(" Executing on CHROME");
@@ -52,7 +52,7 @@ public class TestGrid {
 			cap.setBrowserName("chrome");
 			//cap.setCapability("chrome.switches", Arrays.asList("--start-maximized")); 
 			//String Node = "http://selenium-hub.lingandev.svc:4444/wd/hub";
-			String Node = "http://172.17.0.10:4444/wd/hub";
+			String Node = "http://10.131.0.152:4444/wd/hub";
 			System.out.println(" hub =" + Node);
             System.out.println(" URL =" + URL);
 			driver = new RemoteWebDriver(new URL(Node), cap);
@@ -88,8 +88,8 @@ public class TestGrid {
 	@Test
 	public void calculatepercent() {
 	    try {
+			    /*
 		// 测试新增页面返回button
-		        /*
 				driver.findElement(By.linkText("Add User Info")).click();
 				driver.findElement(By.linkText("Go Back")).click();
 
@@ -120,7 +120,7 @@ public class TestGrid {
 				
 						    
 		    System.out.println(" click() begin");
-			System.out.println("  WebDriver.getTitle() =" + driver.getTitle());
+			System.out.println(" driver.getTitle()="+driver.getTitle());
 			driver.findElement(By.linkText("hao123")).click();
 			System.out.println(" click() end");
      		//driver.manage().window().maximize();
