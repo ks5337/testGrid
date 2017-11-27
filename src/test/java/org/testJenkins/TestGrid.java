@@ -30,7 +30,7 @@ public class TestGrid {
 		if (browser.equalsIgnoreCase("firefox")) {
 			System.out.println(" Executing on FireFox");
 			//String Node = "http://selenium-hub.lingandev.svc:4444/wd/hub";
-			String Node = "http://172.17.0.10:4444/wd/hub";
+			String Node = "http://172.17.0.6:4444/wd/hub";
 			DesiredCapabilities cap = DesiredCapabilities.firefox();
 			System.out.println(" cap = DesiredCapabilities.firefox()");
 			cap.setBrowserName("firefox");
@@ -52,7 +52,7 @@ public class TestGrid {
 			cap.setBrowserName("chrome");
 			//cap.setCapability("chrome.switches", Arrays.asList("--start-maximized")); 
 			//String Node = "http://selenium-hub.lingandev.svc:4444/wd/hub";
-			String Node = "http://10.131.0.152:4444/wd/hub";
+			String Node = "http://172.17.0.6:4444/wd/hub";
 			System.out.println(" hub =" + Node);
             System.out.println(" URL =" + URL);
 			driver = new RemoteWebDriver(new URL(Node), cap);
