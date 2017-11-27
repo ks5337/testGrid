@@ -43,7 +43,7 @@ public class TestGrid {
 			// Launch website
 			driver.navigate().to(URL);
 			System.out.println(" driver.navigate().to(URL) end");
-			driver.manage().window().maximize();
+			//driver.manage().window().maximize();
 		} else if (browser.equalsIgnoreCase("chrome")) {
 
 		    System.out.println(" Executing on CHROME");
