@@ -34,6 +34,7 @@ public class TestGrid {
 			DesiredCapabilities cap = DesiredCapabilities.firefox();
 			System.out.println(" cap = DesiredCapabilities.firefox()");
 			cap.setBrowserName("firefox");
+			cap.set("headless",true);
             System.out.println(" hub =" + Node);
             System.out.println(" URL =" + URL);
             
