@@ -33,7 +33,7 @@ public class TestGrid {
 			String Node = "http://172.17.0.6:4444/wd/hub";
 			DesiredCapabilities cap = DesiredCapabilities.firefox();
 			System.out.println(" cap = DesiredCapabilities.firefox()");
-			cap.setBrowserName("firefox");
+			cap.setBrowserName("firefox");     
 			cap.setCapability("headless",true);
             System.out.println(" hub =" + Node);
             System.out.println(" URL =" + URL);
