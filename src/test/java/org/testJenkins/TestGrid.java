@@ -30,7 +30,7 @@ public class TestGrid {
 		if (browser.equalsIgnoreCase("firefox")) {
 			System.out.println(" Executing on FireFox");
 			//String Node = "http://selenium-hub.lingandev.svc:4444/wd/hub";
-			String Node = "http://172.17.0.6:4444/wd/hub";
+			String Node = "http://172.17.0.5:4444/wd/hub";
 			DesiredCapabilities cap = DesiredCapabilities.firefox();
 			System.out.println(" cap = DesiredCapabilities.firefox()");
 			cap.setBrowserName("firefox");
