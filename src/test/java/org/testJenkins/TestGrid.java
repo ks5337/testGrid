@@ -134,6 +134,7 @@ public class TestGrid {
 
 	@AfterTest
 	public void closeBrowser() {
+		System.out.println(" driver.quit()");
 		driver.quit();
 	}
 }
